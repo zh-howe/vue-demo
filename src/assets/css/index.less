@@ -1,0 +1,45 @@
+*{
+	margin:0;
+	padding:0;
+	color:#333;
+	font-family: "微软雅黑";
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.w1200{
+	max-width: 1200px;
+	margin:0 auto;
+}
+.dis{
+	display: flex;
+}
+.dis-o{
+	display: flex;
+	justify-content: space-between
+}
+.dis-t{
+	display: flex;
+	justify-content: space-around
+}
+.nowarp-o{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+.nowarp-t(@num){
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: @num;
+	overflow: hidden;
+}
+.guodu(@miao){
+	transition: all @miao;
+	-moz-transition: all @miao;
+	-webkit-transition: all @miao;
+	-o-transition: all @miao;
+}
+@color:#b60005;
